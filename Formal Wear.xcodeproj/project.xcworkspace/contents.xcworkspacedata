@@ -4,4 +4,10 @@
    <FileRef
       location = "self:Formal Wear.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:image.jpg">
+   </FileRef>
+   <FileRef
+      location = "group:Bolts.framework">
+   </FileRef>
 </Workspace>

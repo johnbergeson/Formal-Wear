@@ -14,6 +14,22 @@
 		C622B6F31B13F8F700F8BF14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C622B6F21B13F8F700F8BF14 /* Images.xcassets */; };
 		C622B6F61B13F8F700F8BF14 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C622B6F41B13F8F700F8BF14 /* LaunchScreen.xib */; };
 		C622B7021B13F8F700F8BF14 /* Formal_WearTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622B7011B13F8F700F8BF14 /* Formal_WearTests.swift */; };
+		C622B70C1B13FAC700F8BF14 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B70B1B13FAC700F8BF14 /* AddressBook.framework */; };
+		C622B70E1B13FCB100F8BF14 /* Dress.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622B70D1B13FCB100F8BF14 /* Dress.swift */; };
+		C622B7101B13FF4000F8BF14 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622B70F1B13FF4000F8BF14 /* ListViewController.swift */; };
+		C622B7121B1676A600F8BF14 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7111B1676A600F8BF14 /* Parse.framework */; };
+		C622B7141B16949A00F8BF14 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7131B16949A00F8BF14 /* AudioToolbox.framework */; };
+		C622B7161B1694A400F8BF14 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7151B1694A400F8BF14 /* CFNetwork.framework */; };
+		C622B7181B1694B000F8BF14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7171B1694B000F8BF14 /* CoreGraphics.framework */; };
+		C622B71A1B1694BF00F8BF14 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7191B1694BF00F8BF14 /* MobileCoreServices.framework */; };
+		C622B71C1B1694CA00F8BF14 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B71B1B1694CA00F8BF14 /* CoreLocation.framework */; };
+		C622B71E1B1694D500F8BF14 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B71D1B1694D500F8BF14 /* QuartzCore.framework */; };
+		C622B7201B1694E000F8BF14 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B71F1B1694E000F8BF14 /* Security.framework */; };
+		C622B7221B1694EA00F8BF14 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7211B1694EA00F8BF14 /* StoreKit.framework */; };
+		C622B7241B1694F700F8BF14 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7231B1694F700F8BF14 /* SystemConfiguration.framework */; };
+		C622B7261B16951100F8BF14 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7251B16951100F8BF14 /* libz.dylib */; };
+		C622B7281B16952000F8BF14 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7271B16952000F8BF14 /* libsqlite3.dylib */; };
+		C622B72A1B1695B400F8BF14 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7291B1695B400F8BF14 /* Bolts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +54,22 @@
 		C622B6FB1B13F8F700F8BF14 /* Formal WearTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Formal WearTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C622B7001B13F8F700F8BF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C622B7011B13F8F700F8BF14 /* Formal_WearTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formal_WearTests.swift; sourceTree = "<group>"; };
+		C622B70B1B13FAC700F8BF14 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		C622B70D1B13FCB100F8BF14 /* Dress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dress.swift; sourceTree = "<group>"; };
+		C622B70F1B13FF4000F8BF14 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		C622B7111B1676A600F8BF14 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		C622B7131B16949A00F8BF14 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C622B7151B1694A400F8BF14 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C622B7171B1694B000F8BF14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C622B7191B1694BF00F8BF14 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		C622B71B1B1694CA00F8BF14 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C622B71D1B1694D500F8BF14 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C622B71F1B1694E000F8BF14 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C622B7211B1694EA00F8BF14 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C622B7231B1694F700F8BF14 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C622B7251B16951100F8BF14 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C622B7271B16952000F8BF14 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C622B7291B1695B400F8BF14 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Formal Wear.xcodeproj/Bolts.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +77,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C622B72A1B1695B400F8BF14 /* Bolts.framework in Frameworks */,
+				C622B7281B16952000F8BF14 /* libsqlite3.dylib in Frameworks */,
+				C622B7261B16951100F8BF14 /* libz.dylib in Frameworks */,
+				C622B7241B1694F700F8BF14 /* SystemConfiguration.framework in Frameworks */,
+				C622B7221B1694EA00F8BF14 /* StoreKit.framework in Frameworks */,
+				C622B7201B1694E000F8BF14 /* Security.framework in Frameworks */,
+				C622B71E1B1694D500F8BF14 /* QuartzCore.framework in Frameworks */,
+				C622B71C1B1694CA00F8BF14 /* CoreLocation.framework in Frameworks */,
+				C622B71A1B1694BF00F8BF14 /* MobileCoreServices.framework in Frameworks */,
+				C622B7181B1694B000F8BF14 /* CoreGraphics.framework in Frameworks */,
+				C622B7161B1694A400F8BF14 /* CFNetwork.framework in Frameworks */,
+				C622B7141B16949A00F8BF14 /* AudioToolbox.framework in Frameworks */,
+				C622B7121B1676A600F8BF14 /* Parse.framework in Frameworks */,
+				C622B70C1B13FAC700F8BF14 /* AddressBook.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +107,20 @@
 		C622B6DA1B13F8F700F8BF14 = {
 			isa = PBXGroup;
 			children = (
+				C622B7291B1695B400F8BF14 /* Bolts.framework */,
+				C622B7271B16952000F8BF14 /* libsqlite3.dylib */,
+				C622B7251B16951100F8BF14 /* libz.dylib */,
+				C622B7231B1694F700F8BF14 /* SystemConfiguration.framework */,
+				C622B7211B1694EA00F8BF14 /* StoreKit.framework */,
+				C622B71F1B1694E000F8BF14 /* Security.framework */,
+				C622B71D1B1694D500F8BF14 /* QuartzCore.framework */,
+				C622B71B1B1694CA00F8BF14 /* CoreLocation.framework */,
+				C622B7191B1694BF00F8BF14 /* MobileCoreServices.framework */,
+				C622B7171B1694B000F8BF14 /* CoreGraphics.framework */,
+				C622B7151B1694A400F8BF14 /* CFNetwork.framework */,
+				C622B7131B16949A00F8BF14 /* AudioToolbox.framework */,
+				C622B7111B1676A600F8BF14 /* Parse.framework */,
+				C622B70B1B13FAC700F8BF14 /* AddressBook.framework */,
 				C622B6E51B13F8F700F8BF14 /* Formal Wear */,
 				C622B6FE1B13F8F700F8BF14 /* Formal WearTests */,
 				C622B6E41B13F8F700F8BF14 /* Products */,
@@ -81,7 +141,9 @@
 			children = (
 				C622B6E81B13F8F700F8BF14 /* AppDelegate.swift */,
 				C622B6ED1B13F8F700F8BF14 /* ViewController.swift */,
+				C622B70F1B13FF4000F8BF14 /* ListViewController.swift */,
 				C622B6EF1B13F8F700F8BF14 /* Main.storyboard */,
+				C622B70D1B13FCB100F8BF14 /* Dress.swift */,
 				C622B6F21B13F8F700F8BF14 /* Images.xcassets */,
 				C622B6F41B13F8F700F8BF14 /* LaunchScreen.xib */,
 				C622B6EA1B13F8F700F8BF14 /* Formal_Wear.xcdatamodeld */,
@@ -218,6 +280,8 @@
 				C622B6EE1B13F8F700F8BF14 /* ViewController.swift in Sources */,
 				C622B6E91B13F8F700F8BF14 /* AppDelegate.swift in Sources */,
 				C622B6EC1B13F8F700F8BF14 /* Formal_Wear.xcdatamodeld in Sources */,
+				C622B7101B13FF4000F8BF14 /* ListViewController.swift in Sources */,
+				C622B70E1B13FCB100F8BF14 /* Dress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +408,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Formal",
+					Wear.xcodeproj,
+				);
 				INFOPLIST_FILE = "Formal Wear/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +424,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Formal",
+					Wear.xcodeproj,
+				);
 				INFOPLIST_FILE = "Formal Wear/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
