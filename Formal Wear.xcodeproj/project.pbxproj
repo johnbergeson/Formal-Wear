@@ -29,9 +29,12 @@
 		C622B7241B1694F700F8BF14 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7231B1694F700F8BF14 /* SystemConfiguration.framework */; };
 		C622B7261B16951100F8BF14 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7251B16951100F8BF14 /* libz.dylib */; };
 		C622B7281B16952000F8BF14 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7271B16952000F8BF14 /* libsqlite3.dylib */; };
-		C622B72A1B1695B400F8BF14 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7291B1695B400F8BF14 /* Bolts.framework */; };
 		C622B72C1B171A8000F8BF14 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B72B1B171A8000F8BF14 /* Social.framework */; };
 		C622B72E1B171A9100F8BF14 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B72D1B171A9100F8BF14 /* Accounts.framework */; };
+		C622B7321B178C7C00F8BF14 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7311B178C7C00F8BF14 /* Bolts.framework */; };
+		C622B7651B178D2300F8BF14 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C622B7641B178D2300F8BF14 /* image.jpg */; };
+		C622B7671B17A82900F8BF14 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622B7661B17A82900F8BF14 /* LoginViewController.swift */; };
+		C622B76B1B17D8CE00F8BF14 /* AddDressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C622B76A1B17D8CE00F8BF14 /* AddDressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,9 +74,12 @@
 		C622B7231B1694F700F8BF14 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C622B7251B16951100F8BF14 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C622B7271B16952000F8BF14 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		C622B7291B1695B400F8BF14 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Formal Wear.xcodeproj/Bolts.framework"; sourceTree = "<group>"; };
 		C622B72B1B171A8000F8BF14 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		C622B72D1B171A9100F8BF14 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		C622B7311B178C7C00F8BF14 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Downloads/parse-library-1.7.4/Bolts.framework"; sourceTree = "<group>"; };
+		C622B7641B178D2300F8BF14 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		C622B7661B17A82900F8BF14 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C622B76A1B17D8CE00F8BF14 /* AddDressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +87,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C622B7321B178C7C00F8BF14 /* Bolts.framework in Frameworks */,
 				C622B72E1B171A9100F8BF14 /* Accounts.framework in Frameworks */,
 				C622B72C1B171A8000F8BF14 /* Social.framework in Frameworks */,
-				C622B72A1B1695B400F8BF14 /* Bolts.framework in Frameworks */,
 				C622B7281B16952000F8BF14 /* libsqlite3.dylib in Frameworks */,
 				C622B7261B16951100F8BF14 /* libz.dylib in Frameworks */,
 				C622B7241B1694F700F8BF14 /* SystemConfiguration.framework in Frameworks */,
@@ -113,9 +119,9 @@
 		C622B6DA1B13F8F700F8BF14 = {
 			isa = PBXGroup;
 			children = (
+				C622B7311B178C7C00F8BF14 /* Bolts.framework */,
 				C622B72D1B171A9100F8BF14 /* Accounts.framework */,
 				C622B72B1B171A8000F8BF14 /* Social.framework */,
-				C622B7291B1695B400F8BF14 /* Bolts.framework */,
 				C622B7271B16952000F8BF14 /* libsqlite3.dylib */,
 				C622B7251B16951100F8BF14 /* libz.dylib */,
 				C622B7231B1694F700F8BF14 /* SystemConfiguration.framework */,
@@ -147,10 +153,13 @@
 		C622B6E51B13F8F700F8BF14 /* Formal Wear */ = {
 			isa = PBXGroup;
 			children = (
+				C622B7641B178D2300F8BF14 /* image.jpg */,
 				C622B6E81B13F8F700F8BF14 /* AppDelegate.swift */,
 				C622B6ED1B13F8F700F8BF14 /* ViewController.swift */,
 				C622B70F1B13FF4000F8BF14 /* ListViewController.swift */,
 				C622B6EF1B13F8F700F8BF14 /* Main.storyboard */,
+				C622B7661B17A82900F8BF14 /* LoginViewController.swift */,
+				C622B76A1B17D8CE00F8BF14 /* AddDressViewController.swift */,
 				C622B70D1B13FCB100F8BF14 /* Dress.swift */,
 				C622B6F21B13F8F700F8BF14 /* Images.xcassets */,
 				C622B6F41B13F8F700F8BF14 /* LaunchScreen.xib */,
@@ -268,6 +277,7 @@
 				C622B6F11B13F8F700F8BF14 /* Main.storyboard in Resources */,
 				C622B6F61B13F8F700F8BF14 /* LaunchScreen.xib in Resources */,
 				C622B6F31B13F8F700F8BF14 /* Images.xcassets in Resources */,
+				C622B7651B178D2300F8BF14 /* image.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,11 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C622B7671B17A82900F8BF14 /* LoginViewController.swift in Sources */,
 				C622B6EE1B13F8F700F8BF14 /* ViewController.swift in Sources */,
 				C622B6E91B13F8F700F8BF14 /* AppDelegate.swift in Sources */,
 				C622B6EC1B13F8F700F8BF14 /* Formal_Wear.xcdatamodeld in Sources */,
 				C622B7101B13FF4000F8BF14 /* ListViewController.swift in Sources */,
 				C622B70E1B13FCB100F8BF14 /* Dress.swift in Sources */,
+				C622B76B1B17D8CE00F8BF14 /* AddDressViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +433,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Formal",
 					Wear.xcodeproj,
+					"/Users/johnbergeson/Downloads/parse-library-1.7.4",
 				);
 				INFOPLIST_FILE = "Formal Wear/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -437,6 +450,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Formal",
 					Wear.xcodeproj,
+					"/Users/johnbergeson/Downloads/parse-library-1.7.4",
 				);
 				INFOPLIST_FILE = "Formal Wear/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

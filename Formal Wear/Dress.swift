@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 import Parse
+import Bolts
+
+protocol DressDelegate {
+    func updateItems(items : NSArray);
+}
+
 class Dress {
     
     
@@ -36,12 +42,10 @@ func saveToServer (){
     dress["name"] =  name
     dress["price"] = price
     dress ["Image"] = PFFile(data: imageData)
-    object.addObject("Jason", forKey: "name")
-    object.addObject("Macy's", forKey: "store")
-    object.saveInBackground()
 dress.saveInBackgroundWithBlock {
     (success: Bool, error: NSError?) -> Void in
     if (success) {
+        println("Finished saving")
         // The object has been saved.
     } else {
         // There was a problem, check error.description
@@ -49,13 +53,21 @@ dress.saveInBackgroundWithBlock {
 }
 
 }
-////var query = PFQuery(className:"Dress")
-////query.getObjectInBackgroundWithId("TYycZB1CLQ") {
-////    (Dress: PFObject?, error: NSError?) -> Void in
-////    if error == nil && Dress != nil {
-////        println(Dress)
-////    } else {
-////        println(error)
-//myObject.refresh()//    }
-////}
+    
+class func queryObjects()  -> NSArray {
+    var delegate: DressDelegate! = nil
+    var myArray : NSArray = NSArray()
+    var query:PFQuery = PFQuery(className: "Dress")
+    query.findObjectsInBackgroundWithBlock {
+        (objects, error) -> Void in
+        var array : NSArray = objects as AnyObject! as! NSArray
+        myArray = array
+        
+        delegate.updateItems(myArray)
+       
+    }
+     return myArray
+    
+    }
+   
 }
