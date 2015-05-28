@@ -33,9 +33,12 @@ class Dress {
 func saveToServer (){
     var dress = PFObject(className:"Dress")
     dress ["store"] = store
-    dress["name"] = name
+    dress["name"] =  name
     dress["price"] = price
     dress ["Image"] = PFFile(data: imageData)
+    object.addObject("Jason", forKey: "name")
+    object.addObject("Macy's", forKey: "store")
+    object.saveInBackground()
 dress.saveInBackgroundWithBlock {
     (success: Bool, error: NSError?) -> Void in
     if (success) {
@@ -46,13 +49,13 @@ dress.saveInBackgroundWithBlock {
 }
 
 }
-//var query = PFQuery(className:"store")
-//query.getObjectInBackgroundWithId("TYycZB1CLQ") {
-//    (store: PFObject?, error: NSError?) -> Void in
-//    if error == nil && store != nil {
-//        println(store)
-//    } else {
-//        println(error)
-//    }
-//}
+////var query = PFQuery(className:"Dress")
+////query.getObjectInBackgroundWithId("TYycZB1CLQ") {
+////    (Dress: PFObject?, error: NSError?) -> Void in
+////    if error == nil && Dress != nil {
+////        println(Dress)
+////    } else {
+////        println(error)
+//myObject.refresh()//    }
+////}
 }

@@ -16,10 +16,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var items = ["One", "Two"]
 
     override func viewDidLoad() {
+        var window: UIWindow?
+        let testObject = PFObject(className: "TestObject")
+        testObject["foo"] = "bar"
+        testObject.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            println("Object has been saved.")
+        }
         super.viewDidLoad()
         var img = UIImage(named: "image.jpg")
         var data = UIImageJPEGRepresentation(img, 0.8)
         var myDress = Dress(name: "Jason", price: 1200, store: "Macy's", imageData: data)
+        object.addObject("Jason", forKey: "name")
+        object.addObject("Macy's", forKey: "store")
+        object.saveInBackground()
         myDress.saveToServer()
         
         

@@ -30,6 +30,8 @@
 		C622B7261B16951100F8BF14 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7251B16951100F8BF14 /* libz.dylib */; };
 		C622B7281B16952000F8BF14 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7271B16952000F8BF14 /* libsqlite3.dylib */; };
 		C622B72A1B1695B400F8BF14 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B7291B1695B400F8BF14 /* Bolts.framework */; };
+		C622B72C1B171A8000F8BF14 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B72B1B171A8000F8BF14 /* Social.framework */; };
+		C622B72E1B171A9100F8BF14 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C622B72D1B171A9100F8BF14 /* Accounts.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		C622B7251B16951100F8BF14 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		C622B7271B16952000F8BF14 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		C622B7291B1695B400F8BF14 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "Formal Wear.xcodeproj/Bolts.framework"; sourceTree = "<group>"; };
+		C622B72B1B171A8000F8BF14 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C622B72D1B171A9100F8BF14 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C622B72E1B171A9100F8BF14 /* Accounts.framework in Frameworks */,
+				C622B72C1B171A8000F8BF14 /* Social.framework in Frameworks */,
 				C622B72A1B1695B400F8BF14 /* Bolts.framework in Frameworks */,
 				C622B7281B16952000F8BF14 /* libsqlite3.dylib in Frameworks */,
 				C622B7261B16951100F8BF14 /* libz.dylib in Frameworks */,
@@ -107,6 +113,8 @@
 		C622B6DA1B13F8F700F8BF14 = {
 			isa = PBXGroup;
 			children = (
+				C622B72D1B171A9100F8BF14 /* Accounts.framework */,
+				C622B72B1B171A8000F8BF14 /* Social.framework */,
 				C622B7291B1695B400F8BF14 /* Bolts.framework */,
 				C622B7271B16952000F8BF14 /* libsqlite3.dylib */,
 				C622B7251B16951100F8BF14 /* libz.dylib */,
@@ -489,6 +497,7 @@
 				C622B7071B13F8F700F8BF14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C622B7081B13F8F700F8BF14 /* Build configuration list for PBXNativeTarget "Formal WearTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +506,7 @@
 				C622B70A1B13F8F700F8BF14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
