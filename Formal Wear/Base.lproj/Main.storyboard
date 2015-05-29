@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="1ho-vf-4OY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="g1r-Ru-Tvy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,10 +17,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Lsd-FA-CGG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113.59999999999999" y="203.5333333333333"/>
+            <point key="canvasLocation" x="937" y="891"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zxm-wv-E8v">
@@ -46,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JR5-Sb-gfA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1074.6666666666667" y="329.44"/>
+            <point key="canvasLocation" x="2670" y="329"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="WVz-xc-cx8">
@@ -72,13 +73,13 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" id="AGt-h4-eHI"/>
+                                    <segue destination="vXZ-lx-hvc" kind="push" id="4VU-mt-8hr"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QuH-L0-Y9L">
                                 <rect key="frame" x="110" y="244" width="133" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Formal Finder " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAS-CU-1tl">
                                 <rect key="frame" x="85" y="75" width="192" height="76"/>
@@ -98,16 +99,17 @@
                     <toolbarItems>
                         <barButtonItem title="Item" id="bgv-7j-Oum"/>
                     </toolbarItems>
+                    <navigationItem key="navigationItem" id="Slq-Cl-Itg"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0nh-GQ-5eb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9" y="897"/>
+            <point key="canvasLocation" x="523" y="897"/>
         </scene>
         <!--Add Dress View Controller-->
         <scene sceneID="hdN-48-xJq">
             <objects>
-                <viewController id="NXC-FM-3CK" customClass="AddDressViewController" customModule="Formal_Wear" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddDress" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NXC-FM-3CK" customClass="AddDressViewController" customModule="Formal_Wear" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MZ0-Jz-VNl"/>
                         <viewControllerLayoutGuide type="bottom" id="qjy-xj-N4W"/>
@@ -117,9 +119,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eaY-VR-hsj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uz1-Gg-D2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1422" y="897"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="o3C-dg-CO3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="g1r-Ru-Tvy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AZE-z3-4AF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1ho-vf-4OY" kind="relationship" relationship="rootViewController" id="mCq-ko-F92"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdy-FM-bWh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9" y="897"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

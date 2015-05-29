@@ -29,7 +29,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var items = queryObjects()
         
     }
-    
+    override func viewWillAppear(animated: Bool) {
+        var plusButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "addNewDress:")
+        
+        self.navigationItem.rightBarButtonItem = plusButton
+    }
+    func addNewDress(sender : UIBarButtonItem)
+    { self.performSegueWithIdentifier("AddDress", sender: self)
+    }
     func updateItems(items: NSArray) {
         println("Updating")
         self.items = items as! [(PFObject)]
