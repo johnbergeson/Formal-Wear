@@ -25,10 +25,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self;
         tableView.dataSource = self;
         tableView.rowHeight = 100;
-        self.view.addSubview(tableView)
-        var items = queryObjects()
-        
+        self.view.addSubview(tableView)      
     }
+  
+  func itemsUpdated() {
+    queryObjects()
+  }
+  
+  override func viewDidAppear(animated: Bool) {
+    queryObjects()
+  }
     override func viewWillAppear(animated: Bool) {
         var plusButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Add, target: self, action: "addNewDress:")
         
@@ -36,8 +42,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func addNewDress(sender : UIBarButtonItem)
     {
-      let vc = AddDressViewController()
-      self.navigationController?.pushViewController(vc, animated: true)
+//      let vc = AddDressViewController()
+//      self.navigationController?.pushViewController(vc, animated: true)
+      self.performSegueWithIdentifier("AddDress", sender: self)
     }
     func updateItems(items: NSArray) {
         println("Updating")
