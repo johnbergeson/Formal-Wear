@@ -35,7 +35,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.navigationItem.rightBarButtonItem = plusButton
     }
     func addNewDress(sender : UIBarButtonItem)
-    { self.performSegueWithIdentifier("AddDress", sender: self)
+    {
+      let vc = AddDressViewController()
+      self.navigationController?.pushViewController(vc, animated: true)
     }
     func updateItems(items: NSArray) {
         println("Updating")

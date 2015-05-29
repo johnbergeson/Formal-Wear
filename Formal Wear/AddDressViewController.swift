@@ -10,5 +10,7 @@ import Foundation
 import UIKit
 class AddDressViewController : UIViewController
 {
-  
+  override func viewDidLoad() {
+    self.view.backgroundColor = UIColor.whiteColor()
+  }
 }
