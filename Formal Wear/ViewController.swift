@@ -12,7 +12,7 @@ import Parse
 import Bolts
 
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, DressDelegate
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
     var tableView = UITableView()
     
@@ -25,12 +25,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self;
         tableView.dataSource = self;
         tableView.rowHeight = 100;
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("update"), userInfo: nil, repeats: true)
         self.view.addSubview(tableView)      
     }
   
-  func itemsUpdated() {
+  func update()
+  {
+    println("querying")
     queryObjects()
   }
+  
+ 
   
   override func viewDidAppear(animated: Bool) {
     queryObjects()
@@ -46,6 +51,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //      self.navigationController?.pushViewController(vc, animated: true)
       self.performSegueWithIdentifier("AddDress", sender: self)
     }
+  
+  
     func updateItems(items: NSArray) {
         println("Updating")
         self.items = items as! [(PFObject)]

@@ -50,6 +50,7 @@ class AddDressViewController : UIViewController, UIImagePickerControllerDelegate
     var image = UIImageJPEGRepresentation(photoImageView.image, 0.8)
     var price : Double = (self.priceField.text as NSString).doubleValue
     var dress = Dress(name: name, price: price, store: store, imageData: image)
+    
     dress.saveToServer()
     self.performSegueWithIdentifier("listViewController", sender: self)
   }
